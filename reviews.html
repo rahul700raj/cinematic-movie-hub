@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews & Blog - CineHub</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'neon-pink': '#ff006e',
+                        'neon-blue': '#00f5ff',
+                        'neon-purple': '#8b5cf6',
+                        'dark-bg': '#0a0e27',
+                        'dark-card': '#1a1f3a'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-dark-bg text-white">
+    <!-- Navigation -->
+    <nav class="fixed w-full top-0 z-50 bg-dark-bg/95 backdrop-blur-md border-b border-neon-blue/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex items-center space-x-2">
+                        <i class="fas fa-film text-3xl text-neon-pink"></i>
+                        <span class="text-2xl font-bold bg-gradient-to-r from-neon-pink to-neon-blue bg-clip-text text-transparent">CineHub</span>
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-white hover:text-neon-pink transition">Home</a>
+                    <a href="movies.html" class="text-white hover:text-neon-pink transition">Movies</a>
+                    <a href="reviews.html" class="text-neon-pink">Reviews</a>
+                    <a href="about.html" class="text-white hover:text-neon-pink transition">About</a>
+                    <a href="contact.html" class="text-white hover:text-neon-pink transition">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="pt-24 pb-12 bg-gradient-to-b from-dark-card to-dark-bg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h1 class="text-5xl font-bold mb-4">
+                Movie <span class="text-neon-pink">Reviews</span> & Blog
+            </h1>
+            <p class="text-gray-400 text-lg">In-depth analysis and reviews of the latest movies</p>
+        </div>
+    </section>
+
+    <!-- Featured Review -->
+    <section class="py-16 bg-dark-bg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-dark-card rounded-2xl overflow-hidden border border-neon-pink/20 hover:border-neon-pink/50 transition">
+                <div class="grid md:grid-cols-2 gap-8">
+                    <img src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=800" alt="Featured" class="w-full h-full object-cover">
+                    <div class="p-8">
+                        <span class="text-neon-pink text-sm font-semibold">FEATURED REVIEW</span>
+                        <h2 class="text-3xl font-bold mt-2 mb-4">The Evolution of Sci-Fi Cinema in 2024</h2>
+                        <p class="text-gray-400 mb-6">Exploring how science fiction movies have pushed boundaries and redefined storytelling in modern cinema. From groundbreaking visual effects to thought-provoking narratives...</p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-4">
+                                <img src="https://i.pravatar.cc/150?img=1" alt="Author" class="w-10 h-10 rounded-full">
+                                <div>
+                                    <p class="font-semibold">Alex Johnson</p>
+                                    <p class="text-sm text-gray-400">Dec 10, 2025</p>
+                                </div>
+                            </div>
+                            <button class="px-6 py-2 bg-gradient-to-r from-neon-pink to-neon-blue rounded-lg font-semibold hover:shadow-lg hover:shadow-neon-pink/50 transition">
+                                Read More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Grid -->
+    <section class="py-16 bg-dark-card/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold mb-8">
+                Latest <span class="text-neon-blue">Articles</span>
+            </h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Review 1 -->
+                <div class="bg-dark-card rounded-xl overflow-hidden border border-neon-blue/20 hover:border-neon-blue/50 transition group">
+                    <img src="https://images.unsplash.com/photo-1594908900066-3f47337549d8?w=400" alt="Review" class="w-full h-48 object-cover group-hover:scale-110 transition duration-500">
+                    <div class="p-6">
+                        <span class="text-neon-blue text-sm font-semibold">ACTION</span>
+                        <h3 class="text-xl font-bold mt-2 mb-3">Top 10 Action Movies of 2024</h3>
+                        <p class="text-gray-400 text-sm mb-4">A comprehensive look at the year's most thrilling action-packed films that kept us on the edge of our seats.</p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-2">
+                                <img src="https://i.pravatar.cc/150?img=2" alt="Author" class="w-8 h-8 rounded-full">
+                                <span class="text-sm text-gray-400">Sarah Miller</span>
+                            </div>
+                            <span class="text-sm text-gray-400">Dec 8, 2025</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="bg-dark-card rounded-xl overflow-hidden border border-neon-purple/20 hover:border-neon-purple/50 transition group">
+                    <img src="https://images.unsplash.com/photo-1485846234645-a62644f84728?w=400" alt="Review" class="w-full h-48 object-cover group-hover:scale-110 transition duration-500">
+                    <div class="p-6">
+                        <span class="text-neon-purple text-sm font-semibold">DRAMA</span>
+                        <h3 class="text-xl font-bold mt-2 mb-3">The Art of Storytelling in Modern Drama</h3>
+                        <p class="text-gray-400 text-sm mb-4">How contemporary dramas are redefining emotional narratives and character development.</p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-2">
+                                <img src="https://i.pravatar.cc/150?img=3" alt="Author" class="w-8 h-8 rounded-full">
+                                <span class="text-sm text-gray-400">Mike Chen</span>
+                            </div>
+                            <span class="text-sm text-gray-400">Dec 6, 2025</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="bg-dark-card rounded-xl overflow-hidden border border-neon-pink/20 hover:border-neon-pink/50 transition group">
+                    <img src="https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=400" alt="Review" class="w-full h-48 object-cover group-hover:scale-110 transition duration-500">
+                    <div class="p-6">
+                        <span class="text-neon-pink text-sm font-semibold">HORROR</span>
+                        <h3 class="text-xl font-bold mt-2 mb-3">Horror Renaissance: A New Era of Fear</h3>
+                        <p class="text-gray-400 text-sm mb-4">Exploring the resurgence of psychological horror and its impact on modern audiences.</p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-2">
+                                <img src="https://i.pravatar.cc/150?img=4" alt="Author" class="w-8 h-8 rounded-full">
+                                <span class="text-sm text-gray-400">Emma Davis</span>
+                            </div>
+                            <span class="text-sm text-gray-400">Dec 4, 2025</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 4 -->
+                <div class="bg-dark-card rounded-xl overflow-hidden border border-neon-blue/20 hover:border-neon-blue/50 transition group">
+                    <img src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=400" alt="Review" class="w-full h-48 object-cover group-hover:scale-110 transition duration-500">
+                    <div class="p-6">
+                        <span class="text-neon-blue text-sm font-semibold">COMEDY</span>
+                        <h3 class="text-xl font-bold mt-2 mb-3">Laughter in Dark Times: Comedy Films That Heal</h3>
+                        <p class="text-gray-400 text-sm mb-4">How comedy movies provide relief and perspective in challenging times.</p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-2">
+                                <img src="https://i.pravatar.cc/150?img=5" alt="Author" class="w-8 h-8 rounded-full">
+                                <span class="text-sm text-gray-400">Tom Wilson</span>
+                            </div>
+                            <span class="text-sm text-gray-400">Dec 2, 2025</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 5 -->
+                <div class="bg-dark-card rounded-xl overflow-hidden border border-neon-purple/20 hover:border-neon-purple/50 transition group">
+                    <img src="https://images.unsplash.com/photo-1440404653325-ab127d49abc1?w=400" alt="Review" class="w-full h-48 object-cover group-hover:scale-110 transition duration-500">
+                    <div class="p-6">
+                        <span class="text-neon-purple text-sm font-semibold">ANIMATION</span>
+                        <h3 class="text-xl font-bold mt-2 mb-3">The Golden Age of Animated Features</h3>
+                        <p class="text-gray-400 text-sm mb-4">Why animation is no longer just for kids and how it's pushing creative boundaries.</p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-2">
+                                <img src="https://i.pravatar.cc/150?img=6" alt="Author" class="w-8 h-8 rounded-full">
+                                <span class="text-sm text-gray-400">Lisa Park</span>
+                            </div>
+                            <span class="text-sm text-gray-400">Nov 30, 2025</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 6 -->
+                <div class="bg-dark-card rounded-xl overflow-hidden border border-neon-pink/20 hover:border-neon-pink/50 transition group">
+                    <img src="https://images.unsplash.com/photo-1574267432644-f610f5b7e4d1?w=400" alt="Review" class="w-full h-48 object-cover group-hover:scale-110 transition duration-500">
+                    <div class="p-6">
+                        <span class="text-neon-pink text-sm font-semibold">THRILLER</span>
+                        <h3 class="text-xl font-bold mt-2 mb-3">Mind-Bending Thrillers You Can't Miss</h3>
+                        <p class="text-gray-400 text-sm mb-4">A curated list of psychological thrillers that will keep you guessing until the end.</p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-2">
+                                <img src="https://i.pravatar.cc/150?img=7" alt="Author" class="w-8 h-8 rounded-full">
+                                <span class="text-sm text-gray-400">David Lee</span>
+                            </div>
+                            <span class="text-sm text-gray-400">Nov 28, 2025</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark-card border-t border-neon-blue/20 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center text-gray-400">
+                <p>&copy; 2025 CineHub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
