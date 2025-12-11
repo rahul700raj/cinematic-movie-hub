@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies - CineHub</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'neon-pink': '#ff006e',
+                        'neon-blue': '#00f5ff',
+                        'neon-purple': '#8b5cf6',
+                        'dark-bg': '#0a0e27',
+                        'dark-card': '#1a1f3a'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-dark-bg text-white">
+    <!-- Navigation (same as index.html) -->
+    <nav class="fixed w-full top-0 z-50 bg-dark-bg/95 backdrop-blur-md border-b border-neon-blue/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex items-center space-x-2">
+                        <i class="fas fa-film text-3xl text-neon-pink"></i>
+                        <span class="text-2xl font-bold bg-gradient-to-r from-neon-pink to-neon-blue bg-clip-text text-transparent">CineHub</span>
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-white hover:text-neon-pink transition">Home</a>
+                    <a href="movies.html" class="text-neon-pink">Movies</a>
+                    <a href="reviews.html" class="text-white hover:text-neon-pink transition">Reviews</a>
+                    <a href="about.html" class="text-white hover:text-neon-pink transition">About</a>
+                    <a href="contact.html" class="text-white hover:text-neon-pink transition">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="pt-24 pb-12 bg-gradient-to-b from-dark-card to-dark-bg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h1 class="text-5xl font-bold mb-4">
+                Discover <span class="text-neon-pink">Movies</span>
+            </h1>
+            <p class="text-gray-400 text-lg">Explore thousands of movies across all genres</p>
+        </div>
+    </section>
+
+    <!-- Filters -->
+    <section class="py-8 bg-dark-card/50 sticky top-16 z-40 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-wrap gap-4 items-center">
+                <select id="genre-filter" class="px-4 py-2 bg-dark-bg border border-neon-blue/30 rounded-lg text-white focus:outline-none focus:border-neon-pink">
+                    <option value="">All Genres</option>
+                </select>
+                <select id="sort-filter" class="px-4 py-2 bg-dark-bg border border-neon-blue/30 rounded-lg text-white focus:outline-none focus:border-neon-pink">
+                    <option value="popularity.desc">Most Popular</option>
+                    <option value="vote_average.desc">Highest Rated</option>
+                    <option value="release_date.desc">Latest Release</option>
+                    <option value="title.asc">A-Z</option>
+                </select>
+                <select id="year-filter" class="px-4 py-2 bg-dark-bg border border-neon-blue/30 rounded-lg text-white focus:outline-none focus:border-neon-pink">
+                    <option value="">All Years</option>
+                    <option value="2025">2025</option>
+                    <option value="2024">2024</option>
+                    <option value="2023">2023</option>
+                    <option value="2022">2022</option>
+                    <option value="2021">2021</option>
+                </select>
+                <input type="text" id="movie-search" placeholder="Search movies..." class="flex-1 min-w-[200px] px-4 py-2 bg-dark-bg border border-neon-blue/30 rounded-lg text-white focus:outline-none focus:border-neon-pink">
+                <button id="apply-filters" class="px-6 py-2 bg-gradient-to-r from-neon-pink to-neon-blue rounded-lg font-semibold hover:shadow-lg hover:shadow-neon-pink/50 transition">
+                    Apply Filters
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Movies Grid -->
+    <section class="py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div id="movies-grid" class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6">
+                <!-- Movies loaded dynamically -->
+            </div>
+            <div id="loading" class="text-center py-12">
+                <i class="fas fa-spinner fa-spin text-4xl text-neon-pink"></i>
+                <p class="mt-4 text-gray-400">Loading movies...</p>
+            </div>
+            <div id="load-more" class="text-center mt-12 hidden">
+                <button class="px-8 py-3 bg-gradient-to-r from-neon-pink to-neon-blue rounded-lg font-semibold hover:shadow-lg hover:shadow-neon-pink/50 transition">
+                    Load More
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark-card border-t border-neon-blue/20 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center text-gray-400">
+                <p>&copy; 2025 CineHub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/config.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/movies.js"></script>
+</body>
+</html>
