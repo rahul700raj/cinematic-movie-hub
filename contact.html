@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - CineHub</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'neon-pink': '#ff006e',
+                        'neon-blue': '#00f5ff',
+                        'neon-purple': '#8b5cf6',
+                        'dark-bg': '#0a0e27',
+                        'dark-card': '#1a1f3a'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-dark-bg text-white">
+    <!-- Navigation -->
+    <nav class="fixed w-full top-0 z-50 bg-dark-bg/95 backdrop-blur-md border-b border-neon-blue/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex items-center space-x-2">
+                        <i class="fas fa-film text-3xl text-neon-pink"></i>
+                        <span class="text-2xl font-bold bg-gradient-to-r from-neon-pink to-neon-blue bg-clip-text text-transparent">CineHub</span>
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-white hover:text-neon-pink transition">Home</a>
+                    <a href="movies.html" class="text-white hover:text-neon-pink transition">Movies</a>
+                    <a href="reviews.html" class="text-white hover:text-neon-pink transition">Reviews</a>
+                    <a href="about.html" class="text-white hover:text-neon-pink transition">About</a>
+                    <a href="contact.html" class="text-neon-pink">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="pt-24 pb-16 bg-gradient-to-b from-dark-card to-dark-bg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-6xl font-bold mb-6">
+                Get in <span class="text-neon-pink">Touch</span>
+            </h1>
+            <p class="text-xl text-gray-400 max-w-2xl mx-auto">
+                Have questions, suggestions, or feedback? We'd love to hear from you!
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-16 bg-dark-bg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Contact Form -->
+                <div class="bg-dark-card p-8 rounded-2xl border border-neon-blue/20">
+                    <h2 class="text-3xl font-bold mb-6">
+                        Send us a <span class="text-neon-blue">Message</span>
+                    </h2>
+                    <form id="contact-form" class="space-y-6">
+                        <div>
+                            <label class="block text-gray-400 mb-2">Name</label>
+                            <input type="text" required class="w-full px-4 py-3 bg-dark-bg border border-neon-blue/30 rounded-lg text-white focus:outline-none focus:border-neon-pink transition" placeholder="Your name">
+                        </div>
+                        <div>
+                            <label class="block text-gray-400 mb-2">Email</label>
+                            <input type="email" required class="w-full px-4 py-3 bg-dark-bg border border-neon-blue/30 rounded-lg text-white focus:outline-none focus:border-neon-pink transition" placeholder="your@email.com">
+                        </div>
+                        <div>
+                            <label class="block text-gray-400 mb-2">Subject</label>
+                            <input type="text" required class="w-full px-4 py-3 bg-dark-bg border border-neon-blue/30 rounded-lg text-white focus:outline-none focus:border-neon-pink transition" placeholder="What's this about?">
+                        </div>
+                        <div>
+                            <label class="block text-gray-400 mb-2">Message</label>
+                            <textarea required rows="5" class="w-full px-4 py-3 bg-dark-bg border border-neon-blue/30 rounded-lg text-white focus:outline-none focus:border-neon-pink transition resize-none" placeholder="Your message..."></textarea>
+                        </div>
+                        <button type="submit" class="w-full px-6 py-3 bg-gradient-to-r from-neon-pink to-neon-blue rounded-lg font-semibold hover:shadow-lg hover:shadow-neon-pink/50 transition">
+                            Send Message
+                        </button>
+                    </form>
+                    <div id="form-message" class="hidden mt-4 p-4 rounded-lg"></div>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="space-y-8">
+                    <div>
+                        <h2 class="text-3xl font-bold mb-6">
+                            Contact <span class="text-neon-pink">Information</span>
+                        </h2>
+                        <p class="text-gray-400 mb-8">
+                            Feel free to reach out to us through any of these channels. We typically respond within 24-48 hours.
+                        </p>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-neon-pink/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-envelope text-neon-pink text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-1">Email</h3>
+                                <p class="text-gray-400">support@cinehub.com</p>
+                                <p class="text-gray-400">info@cinehub.com</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-neon-blue/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-map-marker-alt text-neon-blue text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-1">Address</h3>
+                                <p class="text-gray-400">123 Cinema Street</p>
+                                <p class="text-gray-400">Los Angeles, CA 90028</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-neon-purple/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-clock text-neon-purple text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-1">Business Hours</h3>
+                                <p class="text-gray-400">Monday - Friday: 9:00 AM - 6:00 PM</p>
+                                <p class="text-gray-400">Saturday - Sunday: Closed</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-dark-card p-6 rounded-2xl border border-neon-pink/20">
+                        <h3 class="text-xl font-bold mb-4">Follow Us</h3>
+                        <div class="flex space-x-4">
+                            <a href="#" class="w-12 h-12 bg-neon-pink/20 rounded-lg flex items-center justify-center hover:bg-neon-pink/30 transition">
+                                <i class="fab fa-facebook text-neon-pink text-xl"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 bg-neon-blue/20 rounded-lg flex items-center justify-center hover:bg-neon-blue/30 transition">
+                                <i class="fab fa-twitter text-neon-blue text-xl"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 bg-neon-purple/20 rounded-lg flex items-center justify-center hover:bg-neon-purple/30 transition">
+                                <i class="fab fa-instagram text-neon-purple text-xl"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 bg-neon-pink/20 rounded-lg flex items-center justify-center hover:bg-neon-pink/30 transition">
+                                <i class="fab fa-youtube text-neon-pink text-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-16 bg-dark-card/30">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-center mb-12">
+                Frequently Asked <span class="text-neon-blue">Questions</span>
+            </h2>
+            <div class="space-y-4">
+                <div class="bg-dark-card p-6 rounded-xl border border-neon-blue/20">
+                    <h3 class="text-xl font-bold mb-2">Is CineHub free to use?</h3>
+                    <p class="text-gray-400">Yes! CineHub is completely free. We provide movie information, trailers, and reviews at no cost.</p>
+                </div>
+                <div class="bg-dark-card p-6 rounded-xl border border-neon-pink/20">
+                    <h3 class="text-xl font-bold mb-2">Can I watch full movies on CineHub?</h3>
+                    <p class="text-gray-400">No, we only provide legal content like trailers, summaries, cast information, and reviews. We do not host or stream copyrighted content.</p>
+                </div>
+                <div class="bg-dark-card p-6 rounded-xl border border-neon-purple/20">
+                    <h3 class="text-xl font-bold mb-2">How often is the database updated?</h3>
+                    <p class="text-gray-400">Our database is updated daily with the latest movie information, trailers, and releases.</p>
+                </div>
+                <div class="bg-dark-card p-6 rounded-xl border border-neon-blue/20">
+                    <h3 class="text-xl font-bold mb-2">Can I suggest a feature?</h3>
+                    <p class="text-gray-400">Absolutely! We love hearing from our users. Use the contact form above to send us your suggestions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark-card border-t border-neon-blue/20 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center text-gray-400">
+                <p>&copy; 2025 CineHub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/contact.js"></script>
+</body>
+</html>
