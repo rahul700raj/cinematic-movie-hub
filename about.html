@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - CineHub</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'neon-pink': '#ff006e',
+                        'neon-blue': '#00f5ff',
+                        'neon-purple': '#8b5cf6',
+                        'dark-bg': '#0a0e27',
+                        'dark-card': '#1a1f3a'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-dark-bg text-white">
+    <!-- Navigation -->
+    <nav class="fixed w-full top-0 z-50 bg-dark-bg/95 backdrop-blur-md border-b border-neon-blue/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex items-center space-x-2">
+                        <i class="fas fa-film text-3xl text-neon-pink"></i>
+                        <span class="text-2xl font-bold bg-gradient-to-r from-neon-pink to-neon-blue bg-clip-text text-transparent">CineHub</span>
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-white hover:text-neon-pink transition">Home</a>
+                    <a href="movies.html" class="text-white hover:text-neon-pink transition">Movies</a>
+                    <a href="reviews.html" class="text-white hover:text-neon-pink transition">Reviews</a>
+                    <a href="about.html" class="text-neon-pink">About</a>
+                    <a href="contact.html" class="text-white hover:text-neon-pink transition">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="pt-24 pb-16 bg-gradient-to-b from-dark-card to-dark-bg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-6xl font-bold mb-6">
+                About <span class="text-neon-pink">CineHub</span>
+            </h1>
+            <p class="text-xl text-gray-400 max-w-3xl mx-auto">
+                Your ultimate destination for discovering, exploring, and celebrating the world of cinema
+            </p>
+        </div>
+    </section>
+
+    <!-- Mission -->
+    <section class="py-16 bg-dark-bg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-4xl font-bold mb-6">
+                        Our <span class="text-neon-blue">Mission</span>
+                    </h2>
+                    <p class="text-gray-400 text-lg mb-4">
+                        CineHub was created with a simple yet powerful mission: to make movie discovery accessible, enjoyable, and informative for everyone.
+                    </p>
+                    <p class="text-gray-400 text-lg mb-4">
+                        We believe that movies are more than just entertainment—they're a form of art, a window into different cultures, and a way to connect with stories that resonate with our lives.
+                    </p>
+                    <p class="text-gray-400 text-lg">
+                        Our platform provides comprehensive information about movies, from the latest blockbusters to hidden gems, helping you make informed decisions about what to watch next.
+                    </p>
+                </div>
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=600" alt="Cinema" class="rounded-2xl shadow-2xl shadow-neon-pink/20">
+                    <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-gradient-to-br from-neon-pink to-neon-blue rounded-2xl opacity-50 blur-2xl"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="py-16 bg-dark-card/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-center mb-12">
+                What We <span class="text-neon-purple">Offer</span>
+            </h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-dark-card p-8 rounded-2xl border border-neon-pink/20 hover:border-neon-pink/50 transition">
+                    <div class="w-16 h-16 bg-gradient-to-br from-neon-pink to-neon-blue rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-search text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Comprehensive Database</h3>
+                    <p class="text-gray-400">
+                        Access information about thousands of movies, including plot summaries, cast details, ratings, and release dates.
+                    </p>
+                </div>
+                <div class="bg-dark-card p-8 rounded-2xl border border-neon-blue/20 hover:border-neon-blue/50 transition">
+                    <div class="w-16 h-16 bg-gradient-to-br from-neon-blue to-neon-purple rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-play-circle text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Official Trailers</h3>
+                    <p class="text-gray-400">
+                        Watch official trailers and teasers to get a preview of movies before deciding what to watch.
+                    </p>
+                </div>
+                <div class="bg-dark-card p-8 rounded-2xl border border-neon-purple/20 hover:border-neon-purple/50 transition">
+                    <div class="w-16 h-16 bg-gradient-to-br from-neon-purple to-neon-pink rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-star text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Expert Reviews</h3>
+                    <p class="text-gray-400">
+                        Read in-depth reviews and articles written by movie enthusiasts and critics.
+                    </p>
+                </div>
+                <div class="bg-dark-card p-8 rounded-2xl border border-neon-pink/20 hover:border-neon-pink/50 transition">
+                    <div class="w-16 h-16 bg-gradient-to-br from-neon-pink to-neon-blue rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-filter text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Smart Filters</h3>
+                    <p class="text-gray-400">
+                        Find exactly what you're looking for with our advanced filtering by genre, year, rating, and more.
+                    </p>
+                </div>
+                <div class="bg-dark-card p-8 rounded-2xl border border-neon-blue/20 hover:border-neon-blue/50 transition">
+                    <div class="w-16 h-16 bg-gradient-to-br from-neon-blue to-neon-purple rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-mobile-alt text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Mobile Friendly</h3>
+                    <p class="text-gray-400">
+                        Enjoy a seamless experience across all devices with our fully responsive design.
+                    </p>
+                </div>
+                <div class="bg-dark-card p-8 rounded-2xl border border-neon-purple/20 hover:border-neon-purple/50 transition">
+                    <div class="w-16 h-16 bg-gradient-to-br from-neon-purple to-neon-pink rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-shield-alt text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Legal Content Only</h3>
+                    <p class="text-gray-400">
+                        We provide only legal content like trailers, summaries, and information—no copyrighted streaming.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values -->
+    <section class="py-16 bg-dark-bg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-center mb-12">
+                Our <span class="text-neon-pink">Values</span>
+            </h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="flex items-start space-x-4">
+                    <div class="w-12 h-12 bg-neon-pink/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <i class="fas fa-heart text-neon-pink text-xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-2">Passion for Cinema</h3>
+                        <p class="text-gray-400">We're movie lovers at heart, and it shows in everything we do.</p>
+                    </div>
+                </div>
+                <div class="flex items-start space-x-4">
+                    <div class="w-12 h-12 bg-neon-blue/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <i class="fas fa-users text-neon-blue text-xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-2">Community First</h3>
+                        <p class="text-gray-400">Our users are at the center of every decision we make.</p>
+                    </div>
+                </div>
+                <div class="flex items-start space-x-4">
+                    <div class="w-12 h-12 bg-neon-purple/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <i class="fas fa-lightbulb text-neon-purple text-xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-2">Innovation</h3>
+                        <p class="text-gray-400">We constantly improve and add new features to enhance your experience.</p>
+                    </div>
+                </div>
+                <div class="flex items-start space-x-4">
+                    <div class="w-12 h-12 bg-neon-pink/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <i class="fas fa-check-circle text-neon-pink text-xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-2">Quality Content</h3>
+                        <p class="text-gray-400">We ensure all information is accurate, up-to-date, and reliable.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-16 bg-gradient-to-r from-neon-pink/20 to-neon-blue/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl font-bold mb-6">
+                Join Our <span class="text-neon-pink">Community</span>
+            </h2>
+            <p class="text-xl text-gray-400 mb-8 max-w-2xl mx-auto">
+                Start exploring thousands of movies and discover your next favorite film today!
+            </p>
+            <a href="movies.html" class="inline-block px-8 py-4 bg-gradient-to-r from-neon-pink to-neon-blue rounded-lg font-semibold text-lg hover:shadow-lg hover:shadow-neon-pink/50 transition">
+                Explore Movies
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark-card border-t border-neon-blue/20 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center text-gray-400">
+                <p>&copy; 2025 CineHub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
